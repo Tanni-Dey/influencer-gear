@@ -33,6 +33,7 @@ p{
     border-radius: 30px;
 }
 .influencer-img{
+    margin-left: 50px;
     transition: 2s;
     background-image: url(images/Circle\ design.svg);
     /* position: absolute; */
@@ -91,3 +92,104 @@ footer .social-icon{
     border-radius: 10px;
     color: thistle;
 }
+
+/* ----------------------Resposive css------------------ */
+
+/* ------------------Mobile Device--------------- */
+@media only screen and (max-width: 688px) {
+    /* --------------influencer section-------------- */
+    .influencer{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .influencer-content{
+        order: 2;
+    }
+    .influencer-img{
+        width: 90%;
+        background-size: cover;
+        order: 1;
+    }
+    /* -----------collection section---------- */
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* ------------technology section------------- */
+    .technology{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .technology-img{
+        width: 100%;
+    }
+  }
+  
+  /* -------------------Tablet Device-------------- */
+  @media only screen and (max-width: 992px) {
+    .influencer{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .influencer-content h1{
+        font-size: 30px;
+    }
+    .influencer-img{
+        width: 98%;
+        background-size: cover;
+    }
+    /* -----------collection section---------- */
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .collection img{
+        width: 98%;
+    }
+    /* ------------technology section------------- */
+    .technology{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .technology-img{
+        width: 100%;
+    }
+  }
+
+  /* Laptop Device */
+   @media only screen and (max-width: 1312px) {
+    /* .influencer{
+        grid-template-columns: repeat(2,1fr);
+    } */
+    /* .influencer-content h1{
+        font-size: 30px;
+    } */
+    .influencer-img{
+        width: 98%;
+        background-size: cover;
+    }
+    /* -----------collection section---------- */
+    .collections{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .collection img{
+        width: 98%;
+    }
+    /* ------------technology section------------- */
+    .technology{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* .technology-img{
+        width: 100%;
+    } */
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+  }
