@@ -36,9 +36,6 @@ p{
     margin-left: 50px;
     transition: 2s;
     background-image: url(images/Circle\ design.svg);
-    /* position: absolute; */
-    /* top: 0;
-    right: 100px; */
 }
 .influencer-img:hover{
     transform: scale(1.20);
@@ -99,7 +96,7 @@ footer .social-icon{
 @media only screen and (max-width: 688px) {
     /* --------------influencer section-------------- */
     .influencer{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     }
     .influencer-content{
@@ -124,9 +121,9 @@ footer .social-icon{
   }
   
   /* -------------------Tablet Device-------------- */
-  @media only screen and (max-width: 992px) {
+  @media only screen and (min-width: 689px) and (max-width: 992px) {
     .influencer{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .influencer-content h1{
         font-size: 30px;
@@ -152,44 +149,21 @@ footer .social-icon{
   }
 
   /* Laptop Device */
-   @media only screen and (max-width: 1312px) {
-    /* .influencer{
-        grid-template-columns: repeat(2,1fr);
-    } */
-    /* .influencer-content h1{
-        font-size: 30px;
-    } */
+   @media only screen and (min-width: 991) and (max-width: 1312px) {
+   
     .influencer-img{
         width: 98%;
         background-size: cover;
     }
     /* -----------collection section---------- */
     .collections{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .collection img{
-        width: 98%;
-    }
+    
     /* ------------technology section------------- */
     .technology{
         grid-template-columns: repeat(2, 1fr);
     }
-    /* .technology-img{
-        width: 100%;
-    } */
+    
   }
   
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    .example {background: blue;}
-  } 
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .example {background: orange;}
-  } 
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
-  }
