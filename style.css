@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* ------------common css----------- */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    margin: 0 100px;
+}
+/* --------------influencer section-------------- */
+.influencer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between
+}
+.influencer-content h1{
+    font-size: 50px;
+}
+.influencer-button{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 66, 97);
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+.influencer-img{
+    transition: 2s;
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+.influencer-button:hover{
+    transform: scale(1.20);
+}
