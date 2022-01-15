@@ -5,6 +5,10 @@ body{
 }
 .container{
     margin: 0 100px;
+    margin-bottom: 50px;
+}
+a{
+    text-decoration: none;
 }
 /* --------------influencer section-------------- */
 .influencer{
@@ -24,10 +28,37 @@ body{
 }
 .influencer-img{
     transition: 2s;
-    position: absolute;
-    top: 0;
-    right: 100px;
+    background-image: url(images/Circle\ design.svg);
+    /* position: absolute; */
+    /* top: 0;
+    right: 100px; */
 }
-.influencer-button:hover{
+.influencer-img:hover{
     transform: scale(1.20);
+}
+/* -----------collection section---------- */
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.collection{
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 40px grey;
+}
+.rating i{
+    color: orange;
+}
+.collection-btn{
+    text-align: right;
+    margin-top: 30px;
+}
+.collection-btn a{
+    color: rgb(255, 66, 97);
 }
